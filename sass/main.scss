@@ -1452,6 +1452,131 @@ p, h1, h2, h3 {
 
 }
 
+/* KAPREMONT SECTION */
+.kapremont-section {
+  background: #fff;
+
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 32px;
+
+    @media (max-width: 1255px){
+      font-size: 24px;
+      line-height: 25px;
+    }
+    @media (max-width: 767px){
+      font-size: 23px;
+      text-align: center;
+      line-height: 26px;
+    }
+  }
+
+  .content {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .left {
+
+    .text {
+
+    }
+    .items {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .right {
+
+  }
+}
+
+/* SPECIAL PROPOSAL */
+.specproposal {
+  background: url('../img/specprop_bg.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  
+  .container {
+    justify-content: space-between;
+  }
+
+  .left {
+    padding: 40px 0 22px;
+    color: #fff;
+  }
+  .subtitle {
+    font-size: 30px;
+    color: #f4f117;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media (max-width: 1255px){
+      font-size: 24px;
+      line-height: 25px;
+    }
+    @media (max-width: 767px){
+      font-size: 23px;
+      text-align: center;
+      line-height: 26px;
+    }
+  }
+  .text {
+    font-size: 25px;
+    width: 540px;
+    margin-top: 70px;
+    margin-bottom: 55px;
+  }
+  .contact-title {
+    font-size: 35px;
+  }
+  .contact-phone {
+    font-size: 35px;
+    color: #fced0c;
+  }
+  .contact-text {
+    font-size: 25px;
+  }
+  
+  .right {
+    width: 475px;
+    min-width: 475px;
+    position: relative;
+    background: url('../img/specprop_yellow_bg.png') 50% 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .precent {
+    position: absolute;
+    font-size: 542px;
+    line-height: 445px;
+    font-weight: 500;
+    bottom: 5px;
+    color: #000;
+    opacity: .1;
+  }
+  .right-text {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 27px;
+  }
+  .right-number {
+    font-size: 200px;
+    font-weight: 500;
+    line-height: 165px;
+  }
+
+
+}
+
 /* HOW WORK SECTION */
 .how-section {
   border-top: 5px solid #000;

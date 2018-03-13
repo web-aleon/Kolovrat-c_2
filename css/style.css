@@ -1961,6 +1961,157 @@ h3 {
   }
 }
 
+/* KAPREMONT SECTION */
+
+.kapremont-section {
+  background: #fff;
+}
+
+.kapremont-section .title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+@media (max-width: 1255px) {
+  .kapremont-section .title {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .kapremont-section .title {
+    font-size: 23px;
+    text-align: center;
+    line-height: 26px;
+  }
+}
+
+.kapremont-section .content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.kapremont-section .left .items {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* SPECIAL PROPOSAL */
+
+.specproposal {
+  background: url("../img/specprop_bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.specproposal .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.specproposal .left {
+  padding: 40px 0 22px;
+  color: #fff;
+}
+
+.specproposal .subtitle {
+  font-size: 30px;
+  color: #f4f117;
+  margin-bottom: 10px;
+}
+
+.specproposal .title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1255px) {
+  .specproposal .title {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .specproposal .title {
+    font-size: 23px;
+    text-align: center;
+    line-height: 26px;
+  }
+}
+
+.specproposal .text {
+  font-size: 25px;
+  width: 540px;
+  margin-top: 70px;
+  margin-bottom: 55px;
+}
+
+.specproposal .contact-title {
+  font-size: 35px;
+}
+
+.specproposal .contact-phone {
+  font-size: 35px;
+  color: #fced0c;
+}
+
+.specproposal .contact-text {
+  font-size: 25px;
+}
+
+.specproposal .right {
+  width: 475px;
+  min-width: 475px;
+  position: relative;
+  background: url("../img/specprop_yellow_bg.png") 50% 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.specproposal .precent {
+  position: absolute;
+  font-size: 542px;
+  line-height: 445px;
+  font-weight: 500;
+  bottom: 5px;
+  color: #000;
+  opacity: .1;
+}
+
+.specproposal .right-text {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 27px;
+}
+
+.specproposal .right-number {
+  font-size: 200px;
+  font-weight: 500;
+  line-height: 165px;
+}
+
 /* HOW WORK SECTION */
 
 .how-section {
