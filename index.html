@@ -486,20 +486,98 @@
     <section class="calculate-section" id="calculate">
       <div class="container">
         <h2 class="title">РАССЧИТАЙТЕ СТОИМОСТЬ РЕМОНТА ОНЛАЙН</h2>
-        <form action="" class="calculate-form clearfix">
-          <div class="left">
-            <p class="left_input_label"></p>
-            <input type="hidden" name="">
-            <p class="left_input_label"></p>
-            <input type="hidden" name="nedvigimost" id="calc_nedvigimost">
-            <p class="left_input_label"></p>
-            <input type="hidden" name="remont" id="calc_remont">
-            <p class="left_input_label"></p>
-            <input type="text" name="ploshad" id="calc_ploshad" required>
+        <form action="" class="calculate-form">
+          <div class="fields clearfix">
+            <div class="left">
+              <p class="input_title">Выберите тип помещения:</p>
+              <select name="app_type" id="calc_app_type">
+                <option value="Квартира">Квартира</option>
+                <option value="Коттедж">Коттедж</option>
+                <option value="Офис">Офис</option>
+              </select>
+              <p class="input_title">Выберите тип недвижимости:</p>
+              <select name="nedvigimost" id="calc_nedvigimost">
+                <option value="Новостройка">Новостройка</option>
+                <option value="Вторичная">Вторичная</option>
+              </select>
+              <p class="input_title">Выберите тип ремонта:</p>
+              <select name="remont" id="calc_remont">
+                <option value="Косметический">Косметический</option>
+                <option value="Капитальный">Капитальный</option>
+                <option value="Элитный">Элитный</option>
+              </select>
+              <p class="input_title">Укажите площадь</p>
+              <input class="text_input" type="text" name="ploshad" id="calc_ploshad" required>
+            </div>
+
+            <div class="right">
+              <p class="input_title">Выберите дополнительные услуги:</p>
+              <label>
+                <input class="checkbox_input" type="checkbox" name="floor">
+                <span class="check_repl"></span>Выравнивание пола
+              </label>
+              <label>
+                <input class="checkbox_input" type="checkbox" name="wall">
+                <span class="check_repl"></span>Выравнивание стен
+            </label>
+              <label>
+                <input class="checkbox_input" type="checkbox" name="top">
+                <span class="check_repl"></span>Выравнивание потолка
+            </label>
+              <label>
+                <input class="checkbox_input" type="checkbox" name="electric">
+                <span class="check_repl"></span>Замена электрики
+            </label>
+              <label>
+                <input class="checkbox_input" type="checkbox" name="water">
+                <span class="check_repl"></span>Замена системы водоснабжения
+            </label>
+              <label>
+                <input class="checkbox_input" type="checkbox" name="heat">
+                <span class="check_repl"></span>Замена системы отопления
+            </label>
+              <label>
+                <input class="checkbox_input" type="checkbox" name="meterial">
+                <span class="check_repl"></span>Материал нашей фирмы
+            </label>
+            </div>
           </div>
-          <div class="right">
-            
+          <div class="button_wrap"><a href="#" class="button" id="wbh_calc_modal_btn">Узнать стоимость</a></div>
+
+          
+          <div id="calc_modal_form">
+              <span id="calc_modal_close">+</span> 
+              <table class="modal_table_2col">
+                <tr>
+
+                  <td class="left_col" id="calc_modal_ltext">
+<!-- ТЕКСТ ЛЕВОЙ КОЛОНКИ ВСПЛЫВАЮЩЕГО ОКНА -->
+                  </td>
+
+                  <td>
+                    <h3 id="calc_modal_title">Расчитать стоимость ремонта</h3>
+                    <p class="calc_modal_subtitle">Просто оставьте ваши данные и мы свяжемся с Вами в ближайшее время</p>
+                    <div action="" class="calc_modal_input_block flex">
+                      <div class="input-wrap">
+                        <input type="text" name="name" id="" placeholder="Имя" required="required">
+                      </div>
+                      <div class="input-wrap">
+                        <input type="tel" name="tel" id="" placeholder="Телефон" required="required">
+                      </div>
+                      <!-- <div class="input-wrap">
+                        <input type="email" name="email" id="" required="required">
+                      </div> -->
+                      <input id="calc_modal_from" type="hidden" name="from" value="Расчет стоимости ремонта онлайн">
+                      <button id="calc_modal_button" class="button">Отправить заявку</button>
+                    </div>
+                  </td>
+
+                </tr>
+              </table>
           </div>
+
+
+
         </form>
       </div>
     </section>
@@ -569,27 +647,39 @@
                 <div class="item-border"></div>
               </div>
             </div>
-            <p class="item-text">Роскошное убранство квартиры или дома являет собой неизменный предмет гордости его обитателей. Строго выдержанный стиль, безупречное сочетание всех элементов декора, креативные дизайнерские решения, непревзойденный комфорт… Хотите, чтобы картинки из глянцевых журналов с восхитительным интерьером стали реальностью для вас? Специалисты нашей компании знают, как исполнить вашу мечту!</p>
+            <p class="item-text">
+              <strong>Как сэкономить на ремонте?</strong>
+              <br><br>
+              Хороший вариант экономии в процессе ремонта – это использование однотонных обоев, обоев с мелким принтом или абстракцией. В ситуации с большими и замысловатыми рисунками необходимо скрупулезное совмещение изображений, вследствие чего остается много неиспользованного материала и обрезков. Также, если вам необходимо оклеить небольшое пространство, поищите в магазинах остатки рулонов, они часто идут с хорошей скидкой.
+            </p>
           </div>
           <div class="item">
             <div class="item-header flex">
               <span class="number">2</span>
               <div class="item-title-block">
-                <h3 class="item-title title">КАЧЕСТВО</h3>
+                <h3 class="item-title title">СКОРОСТЬ</h3>
                 <div class="item-border"></div>
               </div>
             </div>
-            <p class="item-text">Роскошное убранство квартиры или дома являет собой неизменный предмет гордости его обитателей. Строго выдержанный стиль, безупречное сочетание всех элементов декора, креативные дизайнерские решения, непревзойденный комфорт… Хотите, чтобы картинки из глянцевых журналов с восхитительным интерьером стали реальностью для вас? Специалисты нашей компании знают, как исполнить вашу мечту!</p>
+            <p class="item-text">
+              <strong>Что поможет ускорить ремонт?</strong>
+              <br><br>
+              На самом деле, хороший ремонт не терпит торопливых действий. Однако для того, чтобы не растягивать этот процесс на неопределенные сроки, составляйте перед началом работ детально продуманный план, в котором каждый этап будет иметь свои временные рамки. И не забывайте, что для того, чтобы в конце увидеть качественный результат, на каждый вид работ необходимо отвести определенное количество времени.
+            </p>
           </div>
           <div class="item">
             <div class="item-header flex">
               <span class="number">3</span>
               <div class="item-title-block">
-                <h3 class="item-title title">СКОРОСТЬ</h3>
+                <h3 class="item-title title">КАЧЕСТВО</h3>
                 <div class="item-border"></div>
               </div>
             </div>
-            <p class="item-text">Роскошное убранство квартиры или дома являет собой неизменный предмет гордости его обитателей. Строго выдержанный стиль, безупречное сочетание всех элементов декора, креативные дизайнерские решения, непревзойденный комфорт… Хотите, чтобы картинки из глянцевых журналов с восхитительным интерьером стали реальностью для вас? Специалисты нашей компании знают, как исполнить вашу мечту!</p>
+            <p class="item-text">
+              <strong>Как сделать ремонт качественно?</strong>
+              <br><br>
+              Сантехника – это всегда долгосрочное вложение, поэтому экономия на ней неуместна. Останавливайте свой выбор на надежных, хорошо зарекомендовавших себя производителях. Так, например, стальная ванна – самый дешевый вариант, однако она плохо держит тепло по сравнению с чугуном и акрилом, а также шумная и легкая (последний параметр увеличивает шанс опрокидывания).
+            </p>
           </div>
         </div>
       </div>

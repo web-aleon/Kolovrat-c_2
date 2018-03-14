@@ -295,10 +295,8 @@ p, h1, h2, h3 {
 
     @media (max-width: 1255px){
       margin-right: 32px;
-      width: 369px;
+      width: 273px;
       height: auto;
-      left: 52px;
-      margin-bottom: 5px;
     }
     @media (max-width: 1006px){
       margin-right: 25px;
@@ -382,8 +380,8 @@ p, h1, h2, h3 {
     margin-right: 57px;
 
     @media (max-width: 1255px){
-      width: 92px;
-      margin-right: 42px;
+      width: 168px;
+      margin-right: 45px;
     }
     @media (max-width: 1006px){
       width: 73px;
@@ -398,8 +396,8 @@ p, h1, h2, h3 {
     margin-right: 43px;
 
     @media (max-width: 1255px){
-      width: 167px;
-      margin-right: 35px;
+      width: 169px;
+      margin-right: 34px;
     }
     @media (max-width: 1006px){
       width: 134px;
@@ -413,7 +411,7 @@ p, h1, h2, h3 {
     width: 240px;
 
     @media (max-width: 1255px){
-      width: 164px;
+      width: 192px;
     }
     @media (max-width: 1006px){
       width: 131px;
@@ -1363,6 +1361,10 @@ p, h1, h2, h3 {
   padding: 64px 0 29px;
   background-color: #fff;
 
+  @media (max-width: 1255px){
+    padding: 51px 0 23px;
+  }
+
   .title {
     font-size: 30px;
     font-weight: 600;
@@ -1382,12 +1384,21 @@ p, h1, h2, h3 {
     margin-top: 40px;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media (max-width: 1255px){
+      margin-top: 32px;
+    }
   }
   .tarif-item {
     padding: 11px;
     background: url('../img/tarif-item-bg.jpg');
     border: 2px solid #898a8a;
     width: 385px;
+
+    @media (max-width: 1255px){
+      padding: 9px;
+      width: 300px;
+    }
 
     .item-title {
       line-height: 47px;
@@ -1399,6 +1410,12 @@ p, h1, h2, h3 {
       background: url('../img/tarif-title-arrow-left.png'), url('../img/tarif-title-arrow-right.png'), #353533;
       background-repeat: no-repeat;
       background-position: 0% 50%, 100% 50%;
+
+      @media (max-width: 1255px){
+        line-height: 37px;
+        font-size: 22px;
+        background-size: auto 80%;
+      }  
     }
 
     .item-img {
@@ -1406,11 +1423,19 @@ p, h1, h2, h3 {
       height: auto;
       margin-top: 5px;
       margin-bottom: 17px;
+
+      @media (max-width: 1255px){
+        margin-bottom: 13px;
+      }
     }
 
     .item-text {
       font-size: 19px;
       font-weight: 500;
+
+      @media (max-width: 1255px){
+        font-size: 16px;
+      }
     }
     .item-price {
       line-height: 55px;
@@ -1421,6 +1446,13 @@ p, h1, h2, h3 {
       font-size: 24px;
       text-align: center;
       font-weight: 500;
+
+      @media (max-width: 1255px){
+        line-height: 44px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font-size: 19px;
+      }
     }
   }
 
@@ -1432,6 +1464,10 @@ p, h1, h2, h3 {
   border-top: 4px solid #1f1d20;
   border-bottom: 4px solid #1f1d20;
   background: url('../img/calculate-bg.jpg');
+
+  @media (max-width: 1255px){
+    padding: 33px 0 25px;
+  }
 
   .title {
     font-size: 30px;
@@ -1450,13 +1486,136 @@ p, h1, h2, h3 {
   }
 
   .calculate-form {
-    margin-top: 70px;
+    margin-top: 45px;
+
+    @media (max-width: 1255px){
+      margin-top: 36px;
+    }
   }
   .left, .right {
     float: left;
     width: 50%;
   }
+  .input_title {
+    margin: 25px 0;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1em;
 
+    @media (max-width: 1255px){
+      margin: 20px 0;
+      font-size: 20px;
+    }
+  }
+
+  select, .text_input {
+    width: 425px;
+    height: 60px;
+    padding: 0 19px;
+    line-height: 52px;
+    border: 3px solid #1f1d20;
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 25px;
+    outline: none;
+
+    @media (max-width: 1255px){
+      width: 340px;
+      height: 48px;
+      padding: 0 15px;
+      line-height: 41px;
+      font-size: 20px;
+      border-radius: 20px;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../img/calc_select_arrow.png');
+    background-repeat: no-repeat;
+    background-size: auto 60px;
+    background-position: calc( 100% - 19px) 50%;
+    cursor: pointer;
+
+    @media (max-width: 1255px){
+      background-size: auto 48px;
+    }
+  }
+  .right {
+    label {
+      display: block;
+      margin-bottom: 20px;
+      line-height: 49px;
+      font-size: 25px;
+      cursor: pointer;
+
+      @media (max-width: 1255px){
+        margin-bottom: 16px;
+        line-height: 39px;
+        font-size: 20px;
+      }
+    }
+  }
+  .checkbox_input {
+    position: absolute;
+    left: -10000px;
+  }
+  .check_repl {
+    display: block;
+    float: left;
+    width: 49px;
+    height: 49px;
+    margin-right: 34px;
+    background: url('../img/calc_unchecked.png') 50% 50% no-repeat;
+    background-size: 100%;
+
+    @media (max-width: 1255px){
+      width: 39px;
+      height: 39px;
+      margin-right: 27px;
+    }
+  }
+  .checkbox_input:checked + .check_repl {
+    background: url('../img/calc_checked.png') 50% 50% no-repeat;
+    background-size: 100%;
+
+    @media (max-width: 1255px){
+      
+    }
+  }
+  
+  .button_wrap {
+    width: 295px;
+    height: 61px;
+    margin: 40px auto 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 2px solid #979a9d;
+
+    @media (max-width: 1255px){
+      width: 236px;
+      height: 49px;
+      margin: 32px auto 0;
+      padding: 4px;
+    }
+
+    .button {
+      background-color: #b2f7b4;
+      width: 100%;
+      height: 100%;
+      display: block;
+      line-height: 47px;
+      font-size: 25px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @media (max-width: 1255px){
+        line-height: 37px;
+        font-size: 20px;
+      }
+    }
+  }
 
 }
 
@@ -1464,6 +1623,10 @@ p, h1, h2, h3 {
 .kapremont-section {
   padding: 50px 0 80px;
   background: #fff;
+
+  @media (max-width: 1255px){
+    padding: 40px 0 64px;
+  }
 
   .title {
     font-size: 29px;
@@ -1485,51 +1648,109 @@ p, h1, h2, h3 {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 45px;
+
+    @media (max-width: 1255px){
+      margin-top: 36px;
+    }
   }
 
   .left {
     padding-top: 10px;
     width: 550px;
 
+    @media (max-width: 1255px){
+      padding-top: 8px;
+      width: 440px;
+    }
+
     .text {
       font-size: 19px;
+
+      @media (max-width: 1255px){
+        font-size: 16px;
+      }
     }
     .items {
       justify-content: flex-start;
       align-items: center;
       margin-top: 73px;
+
+      @media (max-width: 1255px){
+        margin-top: 58px;
+      }
     }
     
     .item-img {
       margin-bottom: 8px;
+
+      @media (max-width: 1255px){
+        margin-bottom: 6px;
+      }
     }
     .item-text {
       font-size: 19px;
       font-weight: 600;
+
+      @media (max-width: 1255px){
+        font-size: 16px;
+      }
     }
 
     .item-1 {
       width: 119px;
       margin-right: 27px;
 
+      @media (max-width: 1255px){
+        width: 95px;
+        margin-right: 21px;
+      }
+
       .item-img{
         margin-left: 15px;
+
+        @media (max-width: 1255px){
+          margin-left: 12px;
+        }
       }
     }
     .item-2 {
       width: 152px;
       margin-left: 42px;
 
+      @media (max-width: 1255px){
+        width: 121px;
+        margin-left: 33px;
+      }
+
       .item-img{
         margin-top: 10px;
+
+        @media (max-width: 1255px){
+          margin-top: 8px;
+        }
       }
     }
     .item-3 {
       width: 132px;
       margin-left: 30px;
 
+      @media (max-width: 1255px){
+        width: 105px;
+        margin-left: 24px;
+      }
+
       .item-text{
         margin-left: 10px;
+
+        @media (max-width: 1255px){
+          margin-left: 8px;
+        }
+      }
+    }
+    .item-divider {
+      @media (max-width: 1255px){
+        width: 22px;
+        height: auto;
       }
     }
   }
@@ -1537,6 +1758,10 @@ p, h1, h2, h3 {
     .kapremont-img {
       width: 580px;
       height: auto;
+
+      @media (max-width: 1255px){
+        width: 464px;
+      }
     }
   }
 }
@@ -2062,7 +2287,7 @@ p, h1, h2, h3 {
 
 
 /* MODAL FORM */
-#modal_form {
+#modal_form, #calc_modal_form {
   min-width: 300px;
   width: 750px;
   min-height: 320px;
@@ -2086,7 +2311,7 @@ p, h1, h2, h3 {
     overflow-y: auto;
   }
 
-  #modal_close {
+  #modal_close, #calc_modal_close {
     width: 21px;
     height: 21px;
     position: absolute;
@@ -2179,7 +2404,7 @@ p, h1, h2, h3 {
     text-align: center;
     font-size: 14px;
   }
-  form {
+  form, .calc_modal_input_block {
     display: flex;
     flex-direction: column;
     align-items: center;

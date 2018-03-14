@@ -50,10 +50,18 @@ $(document).ready(function () {
 		});
 	});
 
-	$('#modal_close, #overlay').click(modalFormClose);
+	$('#wbh_calc_modal_btn').click(function (event) {
+		event.preventDefault();
+
+		$('#overlay').fadeIn(400, function () {
+			$('#calc_modal_form').css('display', 'block').animate({ opacity: 1, top: '50%' }, 200);
+		});
+	});
+
+	$('#modal_close, #calc_modal_close, #overlay').click(modalFormClose);
 
 	function modalFormClose() {
-		$('#modal_form').animate({ opacity: 0, top: '45%' }, 200, function () {
+		$('#modal_form, #calc_modal_form').animate({ opacity: 0, top: '45%' }, 200, function () {
 			$(this).css('display', 'none');
 			$('#overlay').fadeOut(400);
 		});
