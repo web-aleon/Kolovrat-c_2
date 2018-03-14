@@ -1051,7 +1051,7 @@ h3 {
 
 .portfolio-section .title {
   font-size: 31px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -1190,7 +1190,7 @@ h3 {
 .testimonials-section .title {
   margin-bottom: 64px;
   font-size: 31px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 22px;
   text-transform: uppercase;
 }
@@ -1551,7 +1551,7 @@ h3 {
 
 .advantages-section .title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 32px;
 }
 
@@ -1860,7 +1860,7 @@ h3 {
 
 .tarif-section .title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 32px;
 }
 
@@ -1942,7 +1942,7 @@ h3 {
 
 .calculate-section .title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 32px;
 }
 
@@ -1961,15 +1961,26 @@ h3 {
   }
 }
 
+.calculate-section .calculate-form {
+  margin-top: 70px;
+}
+
+.calculate-section .left,
+.calculate-section .right {
+  float: left;
+  width: 50%;
+}
+
 /* KAPREMONT SECTION */
 
 .kapremont-section {
+  padding: 50px 0 80px;
   background: #fff;
 }
 
 .kapremont-section .title {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 29px;
+  font-weight: 600;
   line-height: 32px;
 }
 
@@ -1995,15 +2006,67 @@ h3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 45px;
+}
+
+.kapremont-section .left {
+  padding-top: 10px;
+  width: 550px;
+}
+
+.kapremont-section .left .text {
+  font-size: 19px;
 }
 
 .kapremont-section .left .items {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 73px;
+}
+
+.kapremont-section .left .item-img {
+  margin-bottom: 8px;
+}
+
+.kapremont-section .left .item-text {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.kapremont-section .left .item-1 {
+  width: 119px;
+  margin-right: 27px;
+}
+
+.kapremont-section .left .item-1 .item-img {
+  margin-left: 15px;
+}
+
+.kapremont-section .left .item-2 {
+  width: 152px;
+  margin-left: 42px;
+}
+
+.kapremont-section .left .item-2 .item-img {
+  margin-top: 10px;
+}
+
+.kapremont-section .left .item-3 {
+  width: 132px;
+  margin-left: 30px;
+}
+
+.kapremont-section .left .item-3 .item-text {
+  margin-left: 10px;
+}
+
+.kapremont-section .right .kapremont-img {
+  width: 580px;
+  height: auto;
 }
 
 /* SPECIAL PROPOSAL */
@@ -2032,7 +2095,7 @@ h3 {
 
 .specproposal .title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 32px;
   color: #fff;
   text-transform: uppercase;
@@ -2112,6 +2175,76 @@ h3 {
   line-height: 165px;
 }
 
+/* ADVICES SECTION*/
+
+.advices-section {
+  padding: 92px 0 130px;
+  background: #fff;
+}
+
+.advices-section .title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1255px) {
+  .advices-section .title {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advices-section .title {
+    font-size: 23px;
+    text-align: center;
+    line-height: 26px;
+  }
+}
+
+.advices-section .items {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 58px;
+}
+
+.advices-section .item {
+  width: 343px;
+}
+
+.advices-section .item .number {
+  font-size: 70px;
+  line-height: 43px;
+  width: 35px;
+  margin-right: 8px;
+}
+
+.advices-section .item .item-title-block {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.advices-section .item .item-title {
+  font-size: 30px;
+  line-height: 34px;
+  background-color: #f2cd46;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+
+.advices-section .item .item-border {
+  background-color: #6a6d6b;
+  height: 6px;
+}
+
+.advices-section .item .item-text {
+  font-size: 20px;
+}
+
 /* HOW WORK SECTION */
 
 .how-section {
@@ -2144,7 +2277,7 @@ h3 {
 .how-section .title {
   font-size: 30px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (max-width: 1255px) {
