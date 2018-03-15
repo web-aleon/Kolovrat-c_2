@@ -2,6 +2,15 @@
 
 $(document).ready(function () {
 
+	/* BANNER SLIDER */
+	$('#banner').slick({
+		arrows: false,
+		autoplay: true,
+		// arrows:true,
+		autoplaySpeed: 5000
+
+	});
+
 	/* SLICK SLIDER */
 	$('#testiSlider').slick({
 		asNavFor: '#textSlider',
